@@ -1,0 +1,103 @@
+<!--
+Contexto: você está montando o início de um formulário de inscrição para um evento de tecnologia.
+Objetivo: praticar a estrutura de agrupamento com <form>, <fieldset> e <legend>.
+
+Requisitos:
+
+    Crie um <form>.
+    Dentro dele, crie um <fieldset> para o grupo "Dados do participante".
+    Adicione um <legend> com esse título dentro do fieldset.
+    Dentro desse field, coloque 3 inputs com label 1 será para nome,
+    outro para telefone e outro para CPF 
+    
+    Dentro do <form>, crie um novo <fieldset> com <legend> "Preferências".
+    Adicione 3 checkboxes com name="temas", 
+    permitindo que o participante marque quais temas do evento tem interesse (ex: "Backend", "Frontend", "IA") — cada um com seu value.
+    Adicione 2 radios com name="periodo", permitindo escolher entre "Manhã" ou "Tarde" — cada um com seu value.
+    Use <label> em todos os campos.
+-->
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Evento de tecnologia</title>
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1>Evento De Tecnologia - INSCRIÇÕES</h1>
+
+    </header>
+
+    <main>
+
+        <form>
+            
+            <fieldset> <!-- Define que esse bloco de entrada de dados tem relação um dado com outro -->
+
+                <legend>Dados do participante</legend>                 <!-- Define o titulo desse bloco de dados -->
+                <label for="nome">Nome:</label>                 <!-- label da um nome para que o usuario saiba o que escrever ali, enquanto for, serve para linkar aquela informação ao id-->
+                <input type="text" id="nome" name="nome">       <!-- type serve para determinar o tipo daquela entrada, id serve para definir o id daquela entrada,
+                enquanto name define que aquela informação vai ser enviada para o banco com o nome de name -->
+                
+                <label for="numero">Digite seu telefone</label>
+                <input type="number" id="numero" name="numero">
+
+                <label for="cpf">Digite o seu CPF</label>
+                <input type="text" id="cpf" name="cpf">
+
+            </fieldset>
+
+            <fieldset>
+
+                <legend>Preferencias</legend>
+
+                <fieldset>                          <!-- Coloquei um fieldset dentro do outro para organizar ainda mais as preferencias -->
+
+                    <legend>Tema que você deseja participar</legend>
+
+                    <label>                         <!--Quando vamos fazer uma checkbox, criamos uma label vazia, somente como input dentro dela -->
+                        <input type="checkbox" name="temas" value="I.a"> Inteligencia Artificial <!-- O input tem o tipo checkbox, o nome dele e o valor dele que será enviado-->
+                    </label>
+                                                    <!--Perceba que terá uma label diferente para cada opção-->
+                    <label>
+                        <input type="checkbox" name="temas" value="Front-End"> Front-End
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="temas" value="Back-End"> Back-End
+                    </label>
+
+                </fieldset>
+
+                <fieldset>
+
+                    <legend>Periodo</legend>
+
+                    <label>
+                        <input type="radio" name="turno" value="Manhã"> Durante a manhã     <!-- radio funciona exatamente como o checkbox a unica diferença é que só pode escolher 1 -->
+                    </label>
+
+                    <label>
+                        <input type="radio" name="turno" value="Tarde"> Durante a tarde
+                    </label>
+
+                </fieldset>
+
+            </fieldset>
+
+        </form>
+
+    </main>
+
+</body>
+
+</html>
