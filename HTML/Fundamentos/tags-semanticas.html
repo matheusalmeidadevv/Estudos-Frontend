@@ -1,0 +1,109 @@
+<!--
+Atividade: Estrutura de um Dashboard Semântico
+Seu desafio é estruturar o "esqueleto" de um Dashboard de Controle de Vagas
+.
+Requisitos:
+NÃO use a tag <div>
+. O objetivo é usar apenas tags semânticas para organizar os blocos de conteúdo
+.
+A estrutura deve incluir:
+    Um cabeçalho principal com o título do sistema
+    Um menu com links de navegação principais
+    Uma área de conteúdo principal, exclusiva desta página
+    Dentro do conteúdo principal, crie duas seções temáticas (ex: "Vagas em Destaque" e "Últimas Candidaturas")
+    Uma barra lateral para informações complementares
+    Um rodapé com créditos ou copyright
+
+Dica: Pense em como cada tag descreve o significado do bloco e não sua aparência visual
+
+-->
+
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+
+    <meta charset = "UTF-8">
+    <title> Dashboard de Controle de Vagas</title>
+
+</head>
+
+<body>
+
+    <header>
+        <h1> DashBoard De Vagas </h1>
+
+        <nav> <!-- Define que é um bloco navegavel-->
+
+            <ul>    <!-- Cria uma lista desordenada  -->
+                
+                <li><a href="#"> Vagas totais </a></li> <!--li define que é um item da lista desordenada, e o a define que o texto é um link -->
+                <li><a href="#"> Vagas para Front-End </a></li>
+                <li><a href="#"> Vagas para Back-End </a></li>
+
+            </ul>
+
+
+        </nav>
+
+    </header>
+
+    <main>
+        <section>
+        
+            <h2>Vagas em destaque</h2>
+            
+            <ul>
+                
+                <li>Vaga 1</li>
+                <li>Vaga 2</li>
+                <li>Vaga 3</li>
+                <li>Vaga 4</li>
+                <li>Vaga 5</li>
+            
+            </ul>
+            
+        </section>
+
+
+        <section>
+
+        <h2>Ultimas Candidaturas</h2>
+        
+        <ul>
+
+            <li>Vaga 1</li>
+            <li>Vaga 2</li>
+            <li>Vaga 3</li>
+            <li>Vaga 4</li>
+            <li>Vaga 5</li>
+            
+        </ul>
+
+        </section>
+
+
+    </main>
+    <aside> <!-- Define que é uma barra lateral  -->
+
+        <ul>
+
+            <li><a href="">Perfil</a></li>
+            <li><a href="">Curriculo</a></li>
+
+        </ul>
+
+    </aside>
+
+    <footer>
+
+        <p>&copy copyright by Matheus Almmeida</p> <!-- &copy gera aquele C de simbolo de copyright-->
+
+    </footer>
+
+    
+
+</body>
+
+</html>
