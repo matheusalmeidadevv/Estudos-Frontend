@@ -24,9 +24,7 @@ Estudos estruturados seguindo um roadmap próprio de Front-end (HTML & CSS) — 
 Estudos-Frontend/
 ├── HTML/
 │   └── Fundamentos/        ← Estrutura, semântica, formulários e DOM
-├── CSS/
-│   └── Layout/              ← Box Model, Flexbox, Grid, responsividade e animações
-└── ...                      ← Novas tecnologias conforme o avanço dos estudos
+└── ...                     ← Novas tecnologias conforme o avanço dos estudos
 ```
 
 ## O que você vai encontrar aqui
