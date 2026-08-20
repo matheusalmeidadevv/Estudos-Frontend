@@ -1,0 +1,85 @@
+<!--
+
+Contexto: agora, num domínio diferente do evento de tecnologia, 
+você vai criar o início de um formulário de cadastro de novo membro numa biblioteca.
+
+Objetivo: revisar <form>, <fieldset>, <legend>, <input type="text">, <input type="number">, <input type="checkbox"> e <input type="radio">.
+
+Requisitos:
+
+Crie um <form>.
+Crie um <fieldset> com <legend> "Dados do membro", contendo:
+Um input de texto para "Nome completo"
+Um input numérico para "Idade"
+Crie outro <fieldset> com <legend> "Preferências de leitura", contendo:
+3 checkboxes com name="generos", para gêneros de livro (ex: "Ficção", "Biografia", "Ciências") — cada um com seu value
+2 radios com name="formato", para escolher entre "Físico" ou "Digital" — cada um com seu value
+Use <label> em todos os campos.
+
+-->
+
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+
+        <title>Cadastro novo na biblioteca</title>
+    </head>
+
+    <body>
+
+        <header>
+            <h1>Cadastro para acessar a biblioteca</h1>
+        </header>
+
+        <main>
+
+            <form>
+                <!-- Esqueci o que exatamente faz o form e como fazer o input, então olhei o codigo da semana passada-->
+                <fieldset>
+                    <legend>Dados do membro</legend>
+                    <label for="Nome">NOME:</label>
+                    <input type="text" id="Nome" name="Nome">
+                    <label for="Tel">TELEFONE:</label>
+                    <input type="number" id="Tel" name="Tel">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Preferencias do Leitor</legend>
+
+                    <label>
+                        <input type="checkbox" name="Genero" value="Ficçao"> Ficção
+                    </label>
+                    
+                    <label>
+                    <input type="checkbox" name="Genero" value="Tecnologia"> Tecnologia
+                    </label>
+
+                    <label>
+                    <input type="checkbox" name="Genero" value="Autodesenvolvimento"> Autodesenvolvimento
+                    </label>
+
+                    <label>
+                    <input type="checkbox" name="Genero" value="Biografia"> Biografia
+                    </label>
+                    
+                    <fieldset>
+                        <legend>Onde você mais ler?</legend>
+                        <label>
+                            <input type="radio" name="formato" value="Digital"> No celular ou aparelhos eletronicos
+                        </label>
+                        <label>
+                            <input type="radio" name="formato" value="Fisico"> Livros fisicos
+                        </label>
+                    </fieldset>
+
+                </fieldset>
+
+            </form>
+
+        </main>
+
+    </body>
+
+</html>
