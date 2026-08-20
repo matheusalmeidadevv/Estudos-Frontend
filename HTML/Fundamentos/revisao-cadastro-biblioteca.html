@@ -74,6 +74,26 @@ Use <label> em todos os campos.
                         </label>
                     </fieldset>
 
+                    <fieldset>
+
+                    <label for="faixaEtaria">Faixa Etaria</label>
+                    <select id="faixaEtaria" name="faixaEtaria">   <!--Cria a opção meio que oculta, onde você consegue selecionar algo atraves de opções ja definidas-->
+                        <option value="infantil">INFANTIL</option>  <!--Opções disponiveis-->
+                        <option value="jovem adulto">JOVEM ADULTO</option>
+                        <option value="adulto">ADULTO</option>
+                    </select>
+
+                </fieldset>
+
+                </fieldset> 
+
+                <fieldset>
+                    <legend>Sobre Você</legend>
+
+                    <!-- O for serve para rotular aquela label, se aquela label não vai ter nada, então não precisa de um for
+                     Outra coisa é que, é importante que tenha algo na label para que fique mais acessivel para as pessoas com deficiciencia visual-->
+                    <label for="bio">Sua biografia</label>
+                    <textarea id="bio" name="bio" rows="5" cols="40">Escreva sobre você aqui</textarea>
                 </fieldset>
 
             </form>
